@@ -194,7 +194,9 @@ fill: #FFFFFF;
     align-items: center;
 }
 
-.input-footer::placeholder {
+.input-footer
+{
+    &::placeholder {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -204,7 +206,10 @@ fill: #FFFFFF;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.input-footer:not(:placeholder-shown) {
+}
+.input-footer
+{
+   &:not(:placeholder-shown) {
     background-color: transparent;
     font-family: 'Roboto';
     font-style: normal;
@@ -217,6 +222,7 @@ fill: #FFFFFF;
     width: 358px;
     height: 50px;
 
+} 
 }
 
 .send-icon {

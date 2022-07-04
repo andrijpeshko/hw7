@@ -43,8 +43,11 @@
 
 }
 
-.modal-close-btn:hover {
+.modal-close-btn
+{
+    &:hover {
     fill: #2196F3;
+}
 }
 
 .is-hidden {
@@ -92,7 +95,9 @@
     box-sizing: border-box;
 }
 
-.modal-input:focus {
+.modal-input
+{
+    &:focus {
     border: 1px solid #2196F3;
     border-radius: 4px;
     outline: transparent;
@@ -100,14 +105,18 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
 
-.modal-textarea:focus {
+.modal-textarea
+{
+    &:focus {
     border: 1px solid #2196F3;
     border-radius: 4px;
     outline: transparent;
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 
 .name-icon-modal .email-icon-modal .tel-icon-modal {
@@ -116,16 +125,25 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus+.name-icon-modal {
+.modal-input
+{
+    &:focus+.name-icon-modal {
+    fill: #2196F3;
+}
+}
+
+.modal-input
+{
+    &:focus+.tel-icon-modal {
     fill: #2196F3;
 }
 
-.modal-input:focus+.tel-icon-modal {
+}
+.modal-input
+{
+    &:focus+.email-icon-modal {
     fill: #2196F3;
 }
-
-.modal-input:focus+.email-icon-modal {
-    fill: #2196F3;
 }
 
 .modal-submit-btn {
@@ -180,7 +198,9 @@
     padding: 16px 12px;
 }
 
-.modal-textarea::placeholder {
+.modal-textarea
+{
+    &::placeholder {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -190,10 +210,13 @@
 
     color: rgba(117, 117, 117, 0.5);
 }
+}
 
 .modal-textarea::placeholder {}
 
-.modal-textarea:not(:placeholder-shown) {
+.modal-textarea
+{
+    &:not(:placeholder-shown) {
     padding: 16px 12px;
     font-family: 'Roboto';
     font-style: normal;
@@ -204,6 +227,7 @@
 
     color: rgba(117, 117, 117, 0.5);
 
+}
 }
 
 .modal-form p {
@@ -273,7 +297,9 @@
     align-items: center;
 }
 
-.checkbox-modal-wrap::before {
+.checkbox-modal-wrap
+{
+   &::before {
     width: 16px;
     height: 15px;
     border: #212121 2px solid;
@@ -281,14 +307,18 @@
     content: "";
     margin-right: 8px;
     border-radius: 4px;
+} 
 }
 
-.modal-checkbox:checked+.checkbox-modal-wrap::before {
+.modal-checkbox
+{
+    &:checked+.checkbox-modal-wrap::before {
     background-color: #2196F3;
     border: #2196F3 2px solid;
     background-image: url(../img/che-modal.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
 }
 
 .name-modal {

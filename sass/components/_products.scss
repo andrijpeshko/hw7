@@ -171,8 +171,11 @@
 
 }
 
-.product-item:hover .product-description {
+.product-item
+{
+    &:hover .product-description {
     transform: translateY(0);
+}
 }
 
 a {

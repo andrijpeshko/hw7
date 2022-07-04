@@ -53,13 +53,18 @@
 }
 
 
-.navigation::after {
+.navigation
+{
+    &::after {
     transition-property: background-color color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
 
-.navigation-portfolio::after {
+.navigation-portfolio
+{
+    &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -70,6 +75,7 @@
     background-color: #2196F3;
 
 
+}
 }
 
 .navigation-portfolio {
@@ -156,7 +162,7 @@
 
 }
 
-.contact-list:first-child {}
+
 
 .contacts-container {
     display: flex;

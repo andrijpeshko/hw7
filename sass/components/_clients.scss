@@ -86,11 +86,15 @@ border: 1px solid #2196F3;
     padding-bottom: 94px;
 }
 
-.clients-link:focus {
+.clients-link
+{
+    &:focus {
     border: 1px solid #2196F3;
     border-radius: 4px;
 
 }
+}
+
 
 .clients-link {
     color: #AFB1B8

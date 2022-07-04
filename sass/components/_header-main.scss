@@ -71,13 +71,18 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation::after {
+.navigation
+{
+    &::after {
     transition-property: background-color color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
 
-.navigation-studio::after {
+.navigation-studio
+{
+   &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -88,6 +93,7 @@
     background-color: #2196F3;
 
 
+} 
 }
 
 .contacts {
@@ -168,7 +174,7 @@
 
 }
 
-.contact-list:first-child {}
+
 
 .contacts-container {
     display: flex;
